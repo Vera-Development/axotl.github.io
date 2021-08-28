@@ -28,6 +28,12 @@ a {
   position: absolute; right: 40px;
 
 }
+.nextto1 {
+  display: inline-block;
+  width: 100px;
+  position: absolute; right: 107px;
+
+}
 .nextto2 {
   display: inline-block;
   width: 100%;
@@ -94,6 +100,10 @@ h5{
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
+h6{
+  color: rgb(243, 177, 78);
+  font-size: 20px;
+}
 
 h3{
   color: white;
@@ -110,7 +120,7 @@ h3{
 }
 .icons-social a{
   margin: 9px;
-  color: rgb(255, 79, 59);
+  color: rgb(243, 177, 78);
 }
 .icons-social a:hover{
   color: #ff7b00;
