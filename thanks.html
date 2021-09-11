@@ -1,80 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'UA-97077319-2');
-  </script>
-  <div class="logo"> 
-    <h3>
-      <img src='https://cdn.discordapp.com/attachments/880967763127058466/881214143179423824/image_1.png' alt='axotl' width='50px' height='50px'> 
-    </h3>
-   </div> 
-   <div class="right"> 
-    <div class='nextto1'><h6>axotl.</h6></div>
-    <div class='nextto'><h5>vera-bot</h5></div>
-    <div class='nextto2'><h4>.xyz</h4></div>
-  </div> 
- </div> 
-<head>
+<html>
+	
+	<head>
+		<link rel="icon" src="/assets/img/boticon.png">
+		<title>axotl - Home</title>
+		<link rel="stylesheet" href="assets/css/fontello.css">
+		<link rel="stylesheet" href="assets/css/shinomiya.css">
+		<meta charset="utf-8">
+		<meta property="og:site_name" content="axotl" />
+		<meta property="og:title" content="axotl" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://axotl.vera-bot.xyz" />
+		<meta property="og:description" content="Roblox & Discord utility commands at your disposal. Searching Roblox user's using Discord ID's, to getting information about Roblox groups!" />
+		<meta property="og:locale" content="en-US">
+		<meta property="og:image:url" src="assets/img/boticon.png">
+		<meta property="og:image:width" content="1080" />
+		<meta property="og:image:height" content="1080" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="box box-avatar">
+				<span class="headingGreen">Success!</span>
+					<span class="lowercaps">Thank you for inviting axotl to your server!</span>
+					<span class="normalcaps">:)</span>
+					<span class="sectionDivider"></span>
+					<span class="normalcaps"><a class="link" href="http://axotl.vera-bot.xyz/">Head back to Main Site</a></span>
+			</div>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta https-equiv="X-UA-Compatible" content="ie=edge">
-  <title>axotl</title>
-  <link rel="icon" href="https://cdn.discordapp.com/attachments/880967763127058466/881214143179423824/image_1.png">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet">
-  
-  <!-- Bootstrap core CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-  <!-- Custom  css3 styles -->
-  <link rel="stylesheet" href="style.css">
-</head>
- <body>
-<h3 class="masthead-brand">Thank you for inviting axotl, it is now in your discord server!  
-  <a href="http://axotl.vera-bot.xyz/">
-    <i class="fas fa-sign-out-alt"></i> Return to axotl Home
-</a>
-</h3>
-</body>
-  <!-- CANVAS CLASS & CDN FOR particles.js -->
-    <canvas class="background2"></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-    <script src="path/to/particles.min.js"></script>
-      <!-- Bootstrap core JavaScript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-      <script src="../../assets/js/vendor/popper.min.js"></script>
-      <script src="../../dist/js/bootstrap.min.js"></script>
-  <!-- Particle Script -->
-    <script>
-      var particles = Particles.init({
-        selector: ".background2",
-        color: [
-          "#ffffff",//blue
-          "#5865f2",//white
-          "#ffffff", //pale blue
-          "#5865f2",//yellow
-          "#ffffff"//florescent green
-        ],
-        sizeVaritions: 2,
-        maxParticles: 100,
-        connectParticles: false,
-        responsive: [
-          {
-            breakpoint: 0,
-            options: {
-              color: "#ff57ef",
-              maxParticles: 10,
-              connectParticles: false
-            }
-          }
-        ]
-      });
-    </script>
+
+			
+		</div>
+
+		<div id="overlay" onclick="hidePopup();"></div>
+
+		<div id="popup">
+			<div class="popupheader">
+				<div class="popupheading">Your message</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" defer>
+			var overlay = document.getElementById("overlay");
+			var popup = document.getElementById("popup");
+
+			function showPopup() {
+				overlay.classList.add("dimpage");
+				setTimeout(function() {
+					popup.classList.add("showpopup");
+				}, 400);
+			}
+
+			// I'm very sorry.
+			function hidePopup() {
+				popup.classList.remove("showpopup");
+				popup.classList.add("hidepopup");
+				setTimeout(function() {
+					popup.classList.remove("hidepopup");
+					overlay.classList.remove("dimpage");
+					overlay.classList.add("undimpage");
+
+					setTimeout(function() {
+						overlay.classList.remove("undimpage");
+					}, 400);
+				}, 400);
+			}
+		</script>
+	</body>
 </html>
+
+
+
+
+
+	
