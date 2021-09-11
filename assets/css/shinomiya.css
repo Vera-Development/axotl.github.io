@@ -29,8 +29,8 @@ html, body {
 	max-width: 150px;
 	max-height: 150px;
 
-	width: 75px;
-	height: 75px;
+	width: auto;
+	height: auto;
     margin-top: 24px;
 	margin-bottom: 20px;
 }
