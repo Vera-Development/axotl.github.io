@@ -23,6 +23,13 @@ html, body {
 	width: auto;
 	height: auto;
 }
+.imagemax {
+	max-width: 450px;
+	max-height: 450px;
+
+	width: auto;
+	height: auto;
+}
 .loadingicon {
 	border-radius: 50%;
 
@@ -64,6 +71,12 @@ html, body {
     margin-top: 20px;
 	margin-bottom: 20px;
 }
+.chunkDivider {
+    border-bottom: 1px solid #808080; 
+    height: auto;
+    margin-top: 100px;
+	margin-bottom: 100px;
+}
 
 .link {
 	font-family: 'Work Sans', sans-serif;
@@ -88,7 +101,20 @@ p{
 	font-family: 'Courier', sans-serif;
 	font-size: 0.8rem;
 	user-select: none;
-  }
+}
+p{
+	color: white;
+	font-family: 'Courier', sans-serif;
+	font-size: 0.8rem;
+	user-select: none;
+}
+h{
+	color: rgba(255, 255, 255, 0.493);
+	font-family: 'Optima', sans-serif;
+	font-size: 0.8rem;
+	font-weight: 100;
+	user-select: none;
+}
 .bio {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 1rem;
