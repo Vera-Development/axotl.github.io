@@ -59,7 +59,6 @@ html, body {
 	display: flex;
 	flex-direction: column;
 }
-
 .headerDivider {
     border-right: 1px solid #808080; 
     height: auto;
@@ -70,6 +69,12 @@ html, body {
     height: auto;
     margin-top: 20px;
 	margin-bottom: 20px;
+}
+.spacerDivider {
+    border-bottom: 1px solid #808080; 
+    height: auto;
+    margin-top: 5px;
+	margin-bottom: 5px;
 }
 .chunkDivider {
     border-bottom: 1px solid #808080; 
@@ -136,6 +141,21 @@ h{
 	font-size: 1rem;
 	user-select: none;
 	text-align: center;
+}
+.warning {
+	font-family: 'Catamaran', sans-serif;
+	font-size: 1rem;
+	user-select: none;
+	text-align: center;
+	color: rgb(226, 174, 31)
+}
+.warning:hover {
+	font-family: 'Catamaran', sans-serif;
+	transform: scale(1.05);
+	transition: transform 0.1s linear;
+	user-select: none;
+	text-align: center;
+	color: rgb(255, 194, 25)
 }
 .headingGreen {
 	font-family: 'Catamaran', sans-serif;
@@ -445,4 +465,3 @@ h{
 	  transform: rotate(359deg);
 	}
   }
-  
