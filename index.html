@@ -1,102 +1,162 @@
 <!DOCTYPE html>
-<html>
-	<head>
-    <link rel="icon" href="https://cdn.discordapp.com/attachments/880967763127058466/881214143179423824/image_1.png">
-		<title>axotl - Home</title>
-		<link rel="stylesheet" href="assets/css/fontello.css">
-		<link rel="stylesheet" href="assets/css/shinomiya.css">
-		<meta charset="utf-8">
-		<meta property="og:site_name" content="axotl" />
-		<meta property="og:title" content="axotl" />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="http://axotl.vera-bot.xyz" />
-		<meta property="og:description" content="Roblox & Discord utility commands at your disposal. Searching Roblox user's using Discord ID's, to getting information about Roblox groups!" />
-		<meta property="og:locale" content="en-US">
-		<meta property="og:image:url" content="https://cdn.discordapp.com/attachments/880967763127058466/881214143179423824/image_1.png">
-		<meta property="og:image:width" content="1080" />
-		<meta property="og:image:height" content="1080" />
-	</head>
-	<body>
-		<div class="container">
-			<div class="box box-avatar">
-				<div class="warning">⚠ WARNING: THE BOT IS MAXED AT 100 GUILDS, WE ARE CURRENTLY WAITING FOR VERIFICATION PROCESS.</div>
-				<div class="spacerDivider"></div>
-				<img src="/assets/img/boticon.png" class="avatar"><br>
-				<span class="heading">axotl</span>
-				<div class="bio">
-					<p>This bot helps you find information from Roblox quicker than looking for it yourself. It also contains a few essential yet extremely useful commands for you to use!</p>
-				</div>
-        <a href="https://top.gg/bot/880965439100952626">
-          <img src="https://top.gg/api/widget/880965439100952626.svg" alt="axotl" />
-          </a>
-			</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>axotl - Home</title>
+    <link rel="stylesheet" href="./cdn/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/cdc336a797.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+    rel="icon"
+    href="https://cdn.discordapp.com/attachments/880967763127058466/881214143179423824/image_1.png"
+  />
+  <meta property="og:site_name" content="axotl" />
+  <meta property="og:title" content="axotl" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://axotl.vera-bot.xyz" />
+  <meta
+    property="og:description"
+    content="Roblox & Discord utility commands at your disposal. Searching Roblox user's using Discord ID's, to getting information about Roblox groups!"
+  />
+  <meta property="og:locale" content="en-US" />
+  <meta
+    property="og:image:url"
+    content="https://cdn.discordapp.com/attachments/880967763127058466/881214143179423824/image_1.png"
+  />
+  <meta property="og:image:width" content="1080" />
+  <meta property="og:image:height" content="1080" />
+  </head>
 
-			<div class="headerDivider"></div>
-
-			<div class="box">
-        <a class="link" href="#Message-of-the-Month" onclick="showPopup();"><i class="icon-chat"></i> Message of the Month </a>
-				<div class="subheading">Pages</div>
-
-				<a class="link" href="http://axotl.vera-bot.xyz/features"></i>Features</a>
-				<a class="link" href="http://axotl.vera-bot.xyz/discord"></i>Support</a>
-				<a class="link" href="https://github.com/axotl-bot"></i>Github</a>
-				
-        <div class="sectionDivider"></div>
-				<div class="subheading2"><a class="link" href="http://axotl.vera-bot.xyz/invite">Invite axotl to your discord server</a></div>
-        <div class="sectionDivider"></div>
-
-				<div class="subheading">External Sites</div>
-
-				<a class="link" href="https://top.gg/bot/880965439100952626/vote"></i><i class="icon-link"></i>Vote on Top.gg</a>
-				<a class="link" href="https://discord.bots.gg/bots/880965439100952626"></i><i class="icon-link"></i>View on Bots.gg</a>
-				<a class="link" href="https://botlists.com/bot/880965439100952626/vote"></i><i class="icon-link"></i>Vote on Botlists.com</a>
-
-				<div class="quote">This project is incomplete and is subject to change without warning. axotl is a multi-purpose discord bot that allows the average user to access public information from Roblox. All brands, companies, images, logos, products, videos, and other copyrights or trademarks featured, mentioned, or referred to within vera-bot.xyz (Our Site) and/or any social media sites are the property of their respective copyright or trademark holders.
-
-          We declare no affiliation, sponsorship, nor any partnerships with any copyright or trademark holders.</div>
-				<div class="quoteauthor">© 2021 madebyFilm</div>
-			</div>
-		</div>
-		<div id="overlay" onclick="hidePopup();"></div>
-
-		<div id="popup">
-			<div class="popupheader">
-				<div class="popupheading"><div class="subheading2">Never eat a burger without buns.</div><div class="subheading2">- javi 22:43</div>
+  <body>
+    <div class="alert-banner">
+      <div class="alert-banner-content">
+        <div class="alert-banner-text">
+          <i class="fas fa-exclamation-circle"></i> axotl is currently maxed at
+          <b>100 Servers</b>. The bot is currently being processed by Discord
+          until <b>September 16 2021</b>!
         </div>
-			</div>
-		</div>
-		<script type="text/javascript" defer>
-			var overlay = document.getElementById("overlay");
-			var popup = document.getElementById("popup");
-
-			function showPopup() {
-				overlay.classList.add("dimpage");
-				setTimeout(function() {
-					popup.classList.add("showpopup");
-				}, 10);
-			}
-
-			// I'm very sorry.
-			function hidePopup() {
-				popup.classList.remove("showpopup");
-				popup.classList.add("hidepopup");
-				setTimeout(function() {
-					popup.classList.remove("hidepopup");
-					overlay.classList.remove("dimpage");
-					overlay.classList.add("undimpage");
-          
-					setTimeout(function() {
-						overlay.classList.remove("undimpage");
-					}, 400);
-				}, 100);
-			}
-		</script>
-	</body>
-	
+      </div>
+    </div>
+    <!-- madebyFilm -->
+    <div class="header">
+      <div class="inner_header">
+        <div class="logo_container">
+          <img src="/cdn/img/icon_1.png" class="iconimagemax" />
+        </div>
+        <div class="nav_container">
+          <a href="https://axotl.vera-bot.xyz"
+            ><span class="highlighted">Home</span></a
+          >
+          <a href="/commands">Commands</a>
+          <a
+            href="https://top.gg/bot/880965439100952626/vote"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Vote</a
+          >
+          <a
+            href="/table-of-contents"
+            ><i class="fas fa-ellipsis-v"></i></a
+          >
+          <a
+            href="https://discord.com/oauth2/authorize?client_id=880965439100952626&permissions=8&redirect_uri=https://axotl.vera-bot.xyz/thanks&response_type=code&scope=bot%20applications.commands"
+            class="special_button"
+            >Invite</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="landing_container">
+      <div class="inner_ld">
+        <div class="ldtext">
+          <h1 class="tagline">axotl <i class="fas fa-globe-americas"></i></h1>
+          <h4 class="subtagline">
+            Roblox & Discord utility commands at your disposal. Searching Roblox
+            user's using Discord ID's, to getting information about Roblox
+            groups!
+          </h4>
+          <div class="btn_containerld">
+            <button>
+              <a
+                href="https://discord.com/oauth2/authorize?client_id=880965439100952626&permissions=8&redirect_uri=https://axotl.vera-bot.xyz/thanks&response_type=code&scope=bot%20applications.commands"
+                >Invite axotl</a
+              >
+            </button>
+            <button><a href="/discord">Support</a></button>
+          </div>
+        </div>
+        <img src="/cdn/img/search_1.png" alt="" />
+      </div>
+    </div>
+    <div class="hero2">
+      <div class="inner_hero">
+        <div class="herohorizontalboxdiv">
+          <div class="herohorizontalbin">
+            <h1>Servers</h1>
+            <p>95+</p>
+          </div>
+          <div class="herohorizontalbin">
+            <h1>Commands</h1>
+            <p>15+</p>
+          </div>
+          <div class="herohorizontalbin">
+            <h1>Users</h1>
+            <p>55K+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="inner_hero">
+        <h1>Why axotl?</h1>
+        <div class="herohorizontalboxdiv">
+          <div class="herohorizontalbox">
+            <p><i class="far fa-calendar-check"></i> No Setup Required</p>
+            <p>
+              Has the advantage of not having to be setup, and if you need
+              support. We are always available in our discord server!
+            </p>
+            <img src="/cdn/img/guild_1.png" alt="" />
+            <a href="/discord"><button>Support server</button></a>
+          </div>
+          <div class="herohorizontalbox">
+            <p>
+              <i class="fas fa-shopping-basket"></i> Loaded with Necessities
+            </p>
+            <p>
+              We have made a loads of commands that are useful to the management
+              of your server, including ROBLOX ones!
+            </p>
+            <img src="/cdn/img/utils_1.png" alt="" />
+            <a href="/commands"><button>View commands</button></a>
+          </div>
+          <div class="herohorizontalbox">
+            <p><i class="fas fa-chart-line"></i> Fast Bot Growth</p>
+            <p>
+              axotl is always being updated and doesn't let down on new
+              commands. You can also vote for our bot to help us populate!
+            </p>
+            <img src="/cdn/img/chart_1.png" alt="" />
+            <a
+              href="https://top.gg/bot/880965439100952626/vote"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><button>Vote on Top.GG</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+    <footer>
+      <p>made with 💖 by madebyFilm</p>
+    </footer>
+    <script>
+      jQuery(".alert-banner-close").on("click", function () {
+        jQuery(this).parent().remove();
+      });
+    </script>
+  </body>
 </html>
-
-
-
-
-
-	
