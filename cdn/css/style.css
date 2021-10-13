@@ -1239,7 +1239,16 @@ svg rect {
     transform: translateY(0%);
   }
 }
-
+@-moz-keyframes alert-banner-slide-in {
+  0% {
+    -webkit-transform: translateY(-150%);
+    transform: translateY(-150%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+    transform: translateY(0%);
+  }
+}
 @keyframes alert-banner-slide-in {
   0% {
     -webkit-transform: translateY(-150%);
